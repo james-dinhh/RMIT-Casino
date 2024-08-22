@@ -11,6 +11,8 @@
 		719FD0612C76EC2200AD21CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719FD0602C76EC2200AD21CF /* ContentView.swift */; };
 		719FD0632C76EC2500AD21CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719FD0622C76EC2500AD21CF /* Assets.xcassets */; };
 		719FD0662C76EC2500AD21CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719FD0652C76EC2500AD21CF /* Preview Assets.xcassets */; };
+		719FD06D2C76F57900AD21CF /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719FD06C2C76F57900AD21CF /* LogoView.swift */; };
+		719FD0712C76F65100AD21CF /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719FD0702C76F65100AD21CF /* Modifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		719FD0602C76EC2200AD21CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		719FD0622C76EC2500AD21CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		719FD0652C76EC2500AD21CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		719FD06C2C76F57900AD21CF /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		719FD0702C76F65100AD21CF /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				719FD05E2C76EC2200AD21CF /* RMIT_CasinoApp.swift */,
 				719FD0602C76EC2200AD21CF /* ContentView.swift */,
+				719FD06C2C76F57900AD21CF /* LogoView.swift */,
+				719FD0702C76F65100AD21CF /* Modifiers.swift */,
 				719FD0622C76EC2500AD21CF /* Assets.xcassets */,
 				719FD0642C76EC2500AD21CF /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719FD0712C76F65100AD21CF /* Modifiers.swift in Sources */,
 				719FD0612C76EC2200AD21CF /* ContentView.swift in Sources */,
+				719FD06D2C76F57900AD21CF /* LogoView.swift in Sources */,
 				719FD05F2C76EC2200AD21CF /* RMIT_CasinoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
