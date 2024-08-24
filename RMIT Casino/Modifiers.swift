@@ -8,50 +8,89 @@
 import Foundation
 import SwiftUI
 
-struct ShadowModifier: ViewModifier {
-    func body(content: Content) -> some View {
-            content
-            .shadow(color:Color("ColorBlackTransparentRMIT") , radius: 10)
-        }
+struct ButtonModifier: ViewModifier {
+  func body(content: Content) -> some View {
+    content
+      .font(.title)
+      .accentColor(Color.white)
+      .padding()
+  }
 }
 
-struct scoreLabelStyle: ViewModifier {
+struct ShadowModifier: ViewModifier{
     func body(content: Content) -> some View {
-            content
-            .foregroundStyle(Color("ColorWhiteRMIT"))
-            .font(.system(size: 10, weight: .bold, design: .rounded))        }
+        content
+            .shadow(color:Color("ColorBlackTransparent"), radius: 7)
+    }
 }
 
-struct scoreNumberStyle: ViewModifier {
+
+
+struct scoreNumberStyle: ViewModifier{
     func body(content: Content) -> some View {
-            content
-            .foregroundStyle(Color("ColorWhiteRMIT"))
-            .font(.system(size: 10, weight: .bold, design: .rounded))        }
+        content
+            .foregroundColor(.white)
+            .font(.system(size: 20, weight: .heavy, design: .rounded))
+    }
 }
 
-struct scoreCapsuleStyle: ViewModifier {
+struct scoreLabelStyle: ViewModifier{
     func body(content: Content) -> some View {
-            content
-            .padding(.vertical,10)
-            .padding(.horizontal,16)
+        content
+            .foregroundColor(Color.white)
+            .font(.system(size: 10, weight: .bold, design: .rounded))
+    }
+}
+
+struct scoreCapsuleStyle: ViewModifier{
+    func body(content: Content) -> some View {
+        content
+            .padding(.vertical, 10)
+            .padding(.horizontal, 16)
             .background(
-                Capsule().foregroundColor(Color("ColorBlackTransparentRMIT"))
-            )     }
+                Capsule()
+                    .foregroundColor(Color("ColorBlackTransparent")))
+    }
 }
 
-struct ReelImageModifier: ViewModifier {
+struct ReelImageModifier: ViewModifier{
     func body(content: Content) -> some View {
-            content
+        content
             .scaledToFit()
             .frame(minWidth: 140, idealWidth: 200, maxWidth: 220, alignment: .center)
-            .modifier(ShadowModifier()) }
+            .modifier(ShadowModifier())
+    }
 }
 
-struct IconImageModifier: ViewModifier {
+struct IconImageModifier: ViewModifier{
     func body(content: Content) -> some View {
-            content
+        content
             .scaledToFit()
-            .frame(minWidth: 50, idealWidth: 60, maxWidth: 70, alignment: .center)
-            .modifier(ShadowModifier()) }
+            .frame(minWidth: 40, idealWidth: 60, maxWidth: 80, alignment: .center)
+            .modifier(ShadowModifier())
+    }
+}
+
+
+struct BetCapsuleModifier: ViewModifier{
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(.white)
+            .font(.system(size: 25, weight: .heavy, design: .rounded))
+            .modifier(ShadowModifier())
+            .background(
+                Capsule().fill(LinearGradient(gradient: Gradient(colors: [Color("ColorYellowRMIT"), Color("ColorRedRMIT")]), startPoint: .bottom, endPoint: .top))
+                    .frame(width: 80, height: 50, alignment: .center)
+            )
+    }
+}
+
+struct CasinoChipModifier: ViewModifier{
+    func body(content: Content) -> some View {
+        content
+            .scaledToFit()
+            .frame(height: 70)
+            .modifier(ShadowModifier())
+    }
 }
 
